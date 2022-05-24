@@ -1,1 +1,1 @@
-console.info('Hello world');
+console.info('Ceci est un très joli TFA');

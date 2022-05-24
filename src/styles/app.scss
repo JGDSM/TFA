@@ -1,10 +1,11 @@
+@import 'components/font';
+@import 'utils/reset';
 @import 'utils/variables';
 @import 'utils/fontscale';
-@import 'components/font';
-@import 'components/type';
+@import '../../node_modules/modern-normalize/modern-normalize.css';
 
 
-body, button{
+body{
     color: $c-text;
     font-family: 'NeueWorld';
 }
@@ -12,11 +13,8 @@ body, button{
     font-family: 'NeueMontreal';
 }
 .test2{
-    font-family: 'NeueMontreal';
-    font-weight: bold;
+    font-family: 'NeueMontreal Bold';
 }
-.test3{
-    font-family: 'NeueMontreal';
-    font-weight: bold;
-    font-style: italic;
+.test3, button{
+    font-family: 'NeueMontreal Bold Italic';
 }

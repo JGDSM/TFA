@@ -1,0 +1,49 @@
+:root{ 
+    --color-primary: #f5f5f5;
+    --color-secondary: #184148;
+    --color-border: #B9B9B9;
+    --color-bg: #f5f5f5;
+    --color-shadow: #dfdfdf;
+    --background__one: rgb(255,106,0);
+}
+
+html{
+    font-size: 100%;
+}
+h1 {
+    font-size: 3.998rem;
+}
+  
+h2 {
+    font-size: 2.827rem;
+}
+  
+h3 {
+    font-size: 1.999rem;
+}
+  
+h4 {
+    font-size: 1.414rem;
+}
+
+@media only screen and (min-width: 750px){
+
+}
+
+@media only screen and (min-width: 1000px){
+    html{
+        font-size: 112.5%;
+    }
+}
+
+@media only screen and (min-width: 1250px){
+    html{
+        font-size: 125%;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    html{
+        font-size: 137.5%;
+    }
+}

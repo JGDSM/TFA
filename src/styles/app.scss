@@ -1,2 +1,22 @@
 @import 'utils/variables';
+@import 'utils/fontscale';
+@import 'components/font';
 @import 'components/type';
+
+
+body, button{
+    color: $c-text;
+    font-family: 'NeueWorld';
+}
+.test1{
+    font-family: 'NeueMontreal';
+}
+.test2{
+    font-family: 'NeueMontreal';
+    font-weight: bold;
+}
+.test3{
+    font-family: 'NeueMontreal';
+    font-weight: bold;
+    font-style: italic;
+}

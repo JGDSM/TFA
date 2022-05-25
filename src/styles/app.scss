@@ -2,19 +2,38 @@
 @import 'utils/reset';
 @import 'utils/variables';
 @import 'utils/fontscale';
+@import 'utils/spacing';
 @import '../../node_modules/modern-normalize/modern-normalize.css';
 
-
-body{
+.title--serif, h1, h2{
     color: $c-text;
     font-family: 'NeueWorld';
+    text-align: center;
 }
-.test1{
+.title--dcolor{
+    color: $c-text-alt;
+}
+p{
     font-family: 'NeueMontreal';
 }
-.test2{
+h1, h3, h4, a{
     font-family: 'NeueMontreal Bold';
 }
-.test3, button{
+button{
     font-family: 'NeueMontreal Bold Italic';
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $c-alt;
+    padding: 16px 22.624px;
+    border-radius: 20px;
+
+    color: $c-text-light;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
 }

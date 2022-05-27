@@ -5,14 +5,13 @@
 @import 'utils/variables';
 @import 'utils/fontscale';
 @import 'utils/spacing';
+
 @import '../../node_modules/modern-normalize/modern-normalize.css';
 
 html{
     background-color: $c-bg;
 }
-.article--bgdark{
-    margin:0;
-}
+
 .article--bgdark::before{
     content:"";
     position: absolute;
@@ -24,6 +23,7 @@ html{
 
     transform: translateY(-600px) rotate(-5deg);
 }
+
 .front{
     height: 100vh;
 }
@@ -42,6 +42,11 @@ html{
 .title--secondline{
     margin-top: 0;
 }
+.title--bgblack{
+    color: $c-text-light;
+}
+
+
 p{
     font-family: 'NeueMontreal';
 }
@@ -69,10 +74,12 @@ a{
 
 .article{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 11.302rem;
 }
 .article__text{
     width: 600px;
+    margin: 0;
 }
 .article__elements{
     padding-left: 2.827rem;
@@ -89,4 +96,9 @@ a{
 .article__link--bgblack{
     background-color: $c-alt;
     color: $c-bg;
+}
+
+img{
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px -4px rgba(0,0,0,0.33);
 }

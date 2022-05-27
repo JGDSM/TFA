@@ -1,10 +1,17 @@
+::-webkit-scrollbar {
+    display: none;
+}
 html{
     overflow-x: hidden;
 }
 
+
 .title{
     display: flex;
     justify-content: center;
+
+    margin: 0;
+    width: 100vw;
 }
 
 h2{
@@ -34,20 +41,15 @@ h2{
     z-index: 1;
 }
 
-.display-form {
-    display: flex;
-    gap: 150px;
-}
-
 .main, .main2{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 100px;
+
+    margin: 0;
 }
 .main{
-    transform: translateX(-75px);
-}
-.main2{
-    transform: translate(75px);
+    transform: translateX(-10%);
+
 }

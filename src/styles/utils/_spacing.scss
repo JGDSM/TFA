@@ -1,4 +1,4 @@
-body{
+section{
     margin: 2.827rem 1rem;
 }
 
@@ -10,9 +10,12 @@ h2{
     margin-top: 7.993rem;
     margin-bottom: 3.998rem;
 }
+h3{
+    margin-bottom: 2.827rem;
+}
 
 @media only screen and (min-width: 750px){
-    body{
+    section{
         margin: 2.827rem 5.653rem;
     }
 }

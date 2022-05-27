@@ -1,0 +1,53 @@
+html{
+    overflow-x: hidden;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-size: 52px;
+    font-family: 'NeueWorld', sans-serif;
+    font-weight: 900;
+    text-align: center;
+
+    width: 1500px;
+}
+
+.magnetic-wrap {
+    display: inline-block;
+    position: relative;
+}
+
+.form, .form2 {
+    border-radius: 20px;
+}
+
+.magnetic-size {
+    position: absolute;
+    bottom: -3rem;
+    top: -3rem;
+    left: -3rem;
+    right: -3rem;
+    z-index: 1;
+}
+
+.display-form {
+    display: flex;
+    gap: 150px;
+}
+
+.main, .main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+.main{
+    transform: translateX(-75px);
+}
+.main2{
+    transform: translate(75px);
+}

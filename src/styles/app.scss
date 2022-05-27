@@ -1,9 +1,32 @@
-@import 'components/font';
+@use 'components/font';
+@use 'components/title';
+
 @import 'utils/reset';
 @import 'utils/variables';
 @import 'utils/fontscale';
 @import 'utils/spacing';
 @import '../../node_modules/modern-normalize/modern-normalize.css';
+
+html{
+    background-color: $c-bg;
+}
+.article--bgdark{
+    margin:0;
+}
+.article--bgdark::before{
+    content:"";
+    position: absolute;
+    background: $c-alt;
+    width: 250%;
+    height: 1100px;
+    left: -200px;
+    z-index: -1;
+
+    transform: translateY(-600px) rotate(-5deg);
+}
+.front{
+    height: 100vh;
+}
 
 .title--serif, h1, h2{
     color: $c-text;
@@ -12,6 +35,12 @@
 }
 .title--dcolor{
     color: $c-text-alt;
+}
+.title--firstline{
+    margin-bottom: 0;
+}
+.title--secondline{
+    margin-top: 0;
 }
 p{
     font-family: 'NeueMontreal';
@@ -36,4 +65,28 @@ a{
 .header{
     display: flex;
     justify-content: space-between;
+}
+
+.article{
+    display: flex;
+    justify-content: space-between;
+}
+.article__text{
+    width: 600px;
+}
+.article__elements{
+    padding-left: 2.827rem;
+    border-left: solid 5px #E5E5E5;
+}
+.article__link{
+    display: block;
+    text-align: left;
+    border-radius: 0;
+
+    background-color: $c-bg;
+    color: $c-alt;
+}
+.article__link--bgblack{
+    background-color: $c-alt;
+    color: $c-bg;
 }

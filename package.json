@@ -29,6 +29,7 @@
     "sass-loader": "^12.4.0"
   },
   "dependencies": {
+    "gsap": "^3.10.4",
     "modern-normalize": "^1.1.0"
   }
 }

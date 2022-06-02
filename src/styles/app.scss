@@ -1,5 +1,6 @@
 @use 'components/font';
 @use 'components/title';
+@use 'components/bgbefore';
 
 @import 'utils/reset';
 @import 'utils/variables';
@@ -11,19 +12,9 @@
 html{
     background-color: $c-bg;
 }
-
-.article--bgdark::before{
-    content:"";
-    position: absolute;
-    background: $c-alt;
-    width: 250%;
-    height: 1100px;
-    left: -200px;
-    z-index: -1;
-
-    transform: translateY(-600px) rotate(-5deg);
+.minvisible{
+    display: none;
 }
-
 .front{
     height: 100vh;
 }
@@ -41,6 +32,7 @@ html{
 }
 .title--secondline{
     margin-top: 0;
+    margin-bottom: 7.993rem;
 }
 .title--bgblack{
     color: $c-text-light;
@@ -57,6 +49,9 @@ button{
     font-family: 'NeueMontreal Bold Italic';
 }
 a{
+    color: $c-alt;
+}
+.link__btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,39 +61,198 @@ a{
 
     color: $c-text-light;
 }
+.link__btn--final{
+    background-color: $c-text-alt;
+    color: $c-text-light;
+}
 
 .header{
     display: flex;
     justify-content: space-between;
 }
+.header__carousel{
+    margin: 0;
+}
+.header__carousel--list{
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+
+    display: flex;
+    gap: 1rem;
+}
+.header__carousel--el{
+    height: 400px;
+}
+
+.header__carousel::after{
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+}
+.header__carousel::before{
+    left: 0;
+    top: 0;
+}
+@-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1750px);
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1750px);
+    }
+  }
 
 .article{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 11.302rem;
 }
 .article__text{
-    width: 600px;
     margin: 0;
 }
 .article__elements{
+    display: block;
+    position: relative;
+
     padding-left: 2.827rem;
-    border-left: solid 5px #E5E5E5;
+}
+.article__elements::before{
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    width: 8px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $c-gray;
+    border-radius: 0.25rem;
 }
 .article__link{
     display: block;
+    position: relative;
     text-align: left;
     border-radius: 0;
 
     background-color: $c-bg;
     color: $c-alt;
 }
+.article__link::before{
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    width: 8px;
+    display: block;
+    position: absolute;
+    left: -2.827rem;
+    top: 0;
+    background: $c-alt;
+    border-radius: 0.25rem;
+}
 .article__link--bgblack{
     background-color: $c-alt;
     color: $c-bg;
+}
+.article__link--bgblack::before{
+    background: $c-text-alt;
 }
 
 img{
     border-radius: 20px;
     box-shadow: 5px 5px 20px -4px rgba(0,0,0,0.33);
+}
+
+.footer{
+    margin-top: 11.302rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "NeueMontreal Bold";
+    font-size: 0.707rem;
+
+    color: $c-alt;
+}
+.footer__list{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__elements{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer__copyright{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.footer__img{
+    border-radius: 0;
+    box-shadow: none;
+    
+    transform: translateY(50px);
+    width: 70%;
+}
+
+.article--final{
+    flex-direction: column;
+    gap: 0;
+}
+.article--final::before{
+    content:"";
+    position: absolute;
+    background: $c-alt;
+    width: 250%;
+    height: 750px;
+    left: -200px;
+    z-index: -1;
+
+    transform: translateY(-50px) rotate(-5deg);
+}
+
+.article--block{
+    position: relative;
+}
+
+@media only screen and (min-width: 500px){
+}
+@media only screen and (min-width: 750px){
+}
+
+@media only screen and (min-width: 1000px){
+}
+
+@media only screen and (min-width: 1250px){
+    .article{
+        flex-direction: row;
+    }
+    .article--final{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: row;
+    }
+    .footer__elements{
+        order: 2;
+    }
+    .footer__img{
+        order: 1;
+    }
+
+    .minvisible{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1750px){
 }

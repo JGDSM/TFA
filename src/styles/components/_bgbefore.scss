@@ -1,0 +1,40 @@
+.article--bgdark::before {
+    content: "";
+    position: absolute;
+    background: #5B48D9;
+    width: 250%;
+    height: 2000px;
+    left: -250px;
+    z-index: -1;
+    transform: translateY(-300px) rotate(-5deg);
+}
+@media only screen and (min-width: 500px){
+    .article--bgdark::before {
+        height: 2500px;
+    }
+}
+@media only screen and (min-width: 750px){
+    .article--bgdark::before {
+        height: 2500px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .article--bgdark::before {
+        height: 2900px;
+        left: -465px;
+        transform: translateY(-300px) rotate(-5deg);
+    }
+}
+@media only screen and (min-width: 1250px){
+    .article--bgdark::before {
+        content: "";
+        position: absolute;
+        background: #5B48D9;
+        width: 250%;
+        height: 1100px;
+        left: -250px;
+        z-index: -1;
+        transform: translateY(-600px) rotate(-5deg);
+    }
+}

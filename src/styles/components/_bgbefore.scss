@@ -1,13 +1,25 @@
 .article--bgdark::before {
     content: "";
     position: absolute;
-    background: #5B48D9;
+    background: $c-alt;
     width: 250%;
     height: 2000px;
     left: -250px;
     z-index: -1;
     transform: translateY(-300px) rotate(-5deg);
 }
+.article--final::before{
+    content:"";
+    position: absolute;
+    background: $c-alt;
+    width: 250%;
+    height: 750px;
+    left: -200px;
+    z-index: -1;
+
+    transform: translateY(-50px) rotate(-5deg);
+}
+
 @media only screen and (min-width: 500px){
     .article--bgdark::before {
         height: 2500px;
@@ -23,18 +35,11 @@
     .article--bgdark::before {
         height: 2900px;
         left: -465px;
-        transform: translateY(-300px) rotate(-5deg);
     }
 }
 @media only screen and (min-width: 1250px){
     .article--bgdark::before {
-        content: "";
-        position: absolute;
-        background: #5B48D9;
-        width: 250%;
-        height: 1100px;
-        left: -250px;
-        z-index: -1;
-        transform: translateY(-600px) rotate(-5deg);
+        height: 1300px;
+        transform: translateY(-500px) rotate(-5deg);
     }
 }

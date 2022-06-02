@@ -114,7 +114,8 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 11.302rem;
+    align-items: center;
+    gap: 3.998rem;
 }
 .article__text{
     margin: 0;
@@ -170,15 +171,19 @@ img{
     border-radius: 20px;
     box-shadow: 5px 5px 20px -4px rgba(0,0,0,0.33);
 }
+.prototype__img{
+    width: 300px;
+}
 
 .footer{
-    margin-top: 11.302rem;
+    margin-top: 
+    15.981rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-family: "NeueMontreal Bold";
-    font-size: 0.707rem;
+    font-size: 1rem;
 
     color: $c-alt;
 }
@@ -189,7 +194,7 @@ img{
 .footer__elements{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2.827rem;
 }
 .footer__copyright{
     display: flex;
@@ -207,17 +212,7 @@ img{
 .article--final{
     flex-direction: column;
     gap: 0;
-}
-.article--final::before{
-    content:"";
-    position: absolute;
-    background: $c-alt;
-    width: 250%;
-    height: 750px;
-    left: -200px;
-    z-index: -1;
-
-    transform: translateY(-50px) rotate(-5deg);
+    align-items: center;
 }
 
 .article--block{
@@ -239,6 +234,11 @@ img{
     .article--final{
         flex-direction: column;
     }
+    .article{
+        gap: 11.302rem;
+    }
+
+
     .footer{
         flex-direction: row;
     }
@@ -247,6 +247,7 @@ img{
     }
     .footer__img{
         order: 1;
+        width: 30%;
     }
 
     .minvisible{

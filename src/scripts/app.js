@@ -36,3 +36,38 @@ mWrap.forEach(function (wrap) {
     });
   });
 });
+
+// apparition contenu scénarios
+
+const slideLinks = document.querySelectorAll('.contents__el');
+slideLinks.forEach(function(link) {
+    link.addEventListener("click", onSlideLinkClick);
+});
+
+function onSlideLinkClick(e) {
+    //arrêt comportement normal
+    e.preventDefault();
+
+    // représentation de l'élément cliqué
+    const target = e.currentTarget
+    
+    // récupérer l'attribut href
+    let href = target.getAttribute('href');
+    let datahref = href.substr(1);
+
+    //mettre le contenu dans le data-page du div
+    const articleone = document.querySelector('#article1');
+    const articletwo = document.querySelector('#article2');
+    const articlethree = document.querySelector('#article3');
+    
+
+    if (datahref.includes("title1")){
+      articleone.setAttribute('data-slide', datahref);
+    } else if (datahref.includes("title2")){
+      articletwo.setAttribute('data-slide', datahref);
+    }
+    else if (datahref.includes("title3")){
+      articlethree.setAttribute('data-slide', datahref);
+    }
+    
+}

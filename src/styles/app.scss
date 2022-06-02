@@ -1,6 +1,5 @@
 @use 'components/font';
 @use 'components/title';
-@use 'components/bgbefore';
 
 @import 'utils/reset';
 @import 'utils/variables';
@@ -9,6 +8,17 @@
 
 @import '../../node_modules/modern-normalize/modern-normalize.css';
 
+.article--final::before{
+    content:"";
+    position: absolute;
+    background: $c-alt;
+    width: 250%;
+    height: 750px;
+    left: -200px;
+    z-index: -1;
+
+    transform: translateY(-50px) rotate(-5deg);
+}
 html{
     background-color: $c-bg;
 }
@@ -60,6 +70,11 @@ a{
     border-radius: 20px;
 
     color: $c-text-light;
+}
+.link__btn:hover{
+    box-shadow: inset 0 -100px 0 0 $c-link;
+    color: $c-text-light;
+    transition: 0.5s ease-in;
 }
 .link__btn--final{
     background-color: $c-text-alt;
@@ -208,6 +223,12 @@ img{
     transform: translateY(50px);
     width: 70%;
 }
+.footer__link:hover{
+    svg > path{
+        fill: $c-link;
+    }
+}
+
 
 .article--final{
     flex-direction: column;
@@ -219,23 +240,44 @@ img{
     position: relative;
 }
 
+.article--bgdark::before {
+    content: "";
+    position: absolute;
+    background: $c-alt;
+    width: 250%;
+    height: 2000px;
+    left: -250px;
+    z-index: -1;
+    transform: translateY(-300px) rotate(-5deg);
+}
+
 @media only screen and (min-width: 500px){
+    .article--bgdark::before {
+        height: 1800px;
+    }
 }
 @media only screen and (min-width: 750px){
+    .article--bgdark::before {
+    }
 }
 
 @media only screen and (min-width: 1000px){
+    .article--bgdark::before {
+        left: -465px;
+    }
 }
-
 @media only screen and (min-width: 1250px){
     .article{
         flex-direction: row;
+        gap: 11.302rem;
+    }
+    .article--bgdark::before {
+        height: 1300px;
+        transform: translateY(-500px) rotate(-5deg);
     }
     .article--final{
         flex-direction: column;
-    }
-    .article{
-        gap: 11.302rem;
+        gap: 0;
     }
 
 

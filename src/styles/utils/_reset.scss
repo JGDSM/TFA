@@ -1,5 +1,10 @@
 @import '../utils/variables';
 
+::selection {
+    color: $c-text-light;
+    background-color: $c-selection;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -16,7 +21,9 @@ a{
     text-decoration: none;
 }
 a:hover{
-    text-decoration: underline;
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    color: $c-link;
 }
 
 button{

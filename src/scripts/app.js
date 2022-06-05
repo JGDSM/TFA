@@ -1,7 +1,8 @@
 "use strict";
+
 import { gsap } from "gsap";
 
-var mWrap = document.querySelectorAll(".magnetic-wrap");
+var mWrap = document.querySelectorAll(".title__magneticwrap");
 
 function parallaxIt(e, wrap, movement = 1) {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -19,8 +20,8 @@ function parallaxIt(e, wrap, movement = 1) {
 }
 
 mWrap.forEach(function (wrap) {
-  wrap.mContent = wrap.querySelector(".js-magnetic-content");
-  wrap.mArea = wrap.querySelector(".js-magnetic-area");
+  wrap.mContent = wrap.querySelector(".title__content");
+  wrap.mArea = wrap.querySelector(".title__magneticarea");
   
   wrap.mArea.addEventListener("mousemove", function(e) {
     parallaxIt(e, wrap);

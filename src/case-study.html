@@ -11,22 +11,22 @@
     <meta name="twitter:site" content="joao-gabriel.be">
     <meta name="twitter:creator" content="# @JG_DSM">
     <meta name="twitter:title" content="jg.dsm">
-    <meta name="twitter:description" content="Welcome to my front page. Be my guest !">
+    <meta name="twitter:description" content="This is my TFA, the Colibri app, a virtual libary opening a new world of possibilities for every reader.">
 
     <!-- Twitter summary card with large image must be at least 280x150px -->
-    <meta name="twitter:image" content="">
+    <meta name="twitter:image" content="assets/images/cover.png">
 
     <!-- Open Graph data -->
     <meta property="og:site_name" content="jg.dsm">
     <meta property="og:title" content="jg.dsm - tfa">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="This is my TFA, the Colibri app, a virtual libary opening a new world of possibilities for every reader."">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://joao-gabriel.be/projets/tfa">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="assets/images/cover.png">
     <meta property="og:image:width" content="1800">
     <meta property="og:image:height" content="945">
 
-    <link rel="icon" type="images/svg" href="">
+    <link rel="icon" type="images/svg" href="assets/images/favicon.svg">
 
     <!-- CSS and Javascript -->
     <link rel="stylesheet" href="styles/app.css">
@@ -37,88 +37,290 @@
 </head>
 <body>
 
-    <h1>TFA - suggérer</h1>
+    <header>
 
-    <h2>L’idée première</h2>
+      <section class="header">
 
-    <p>Mon idée de base était de partir sur un service permettant aux immigrés de trouver des commerces et groupes provenant de leur pays en Belgique. Cela fonctionnerait alors sous forme de suggestions sur base du pays ou de la région d’où l’utilisateur proviendrait.
-    <p>Voyons comment tout cela peut évoluer.</p>
+        <a href="index.html" class="">
+          <svg width="101" height="26" viewBox="0 0 101 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_24_363)">
+                <path d="M9.03405 25.9649C7.7652 25.9649 6.58275 25.7308 5.4854 25.2625C4.38676 24.7943 3.43125 24.1557 2.61629 23.3441C1.80134 22.5338 1.16176 21.5804 0.697542 20.4839C0.233328 19.3875 0.0012207 18.2351 0.0012207 17.0242C0.0012207 15.8133 0.233328 14.6323 0.697542 13.5476C1.16176 12.4628 1.80134 11.5094 2.61629 10.6874C3.43125 9.86542 4.38804 9.2203 5.4854 8.75206C6.58275 8.28383 7.76649 8.06142 9.03405 8.08353C10.664 8.10694 12.1701 8.50104 13.5511 9.26582C14.9322 10.0306 16.0076 11.235 16.7774 12.8803L12.8045 15.0732C12.4189 14.3201 11.9044 13.7323 11.2597 13.3095C10.615 12.8868 9.87222 12.6761 9.03534 12.6761C8.24231 12.6761 7.52923 12.8699 6.89609 13.2588C6.26166 13.6477 5.75877 14.1667 5.38482 14.817C5.01087 15.4673 4.82389 16.2048 4.82389 17.0268C4.82389 17.8033 5.01087 18.5225 5.38482 19.1846C5.75877 19.8466 6.26166 20.3786 6.89609 20.7779C7.52923 21.1772 8.24231 21.3775 9.03534 21.3775C9.87222 21.3775 10.615 21.1603 11.2597 20.7271C11.9044 20.294 12.4202 19.7113 12.8045 18.9804L16.7774 21.1733C16.0076 22.8173 14.9322 24.023 13.5511 24.7878C12.1701 25.5526 10.664 25.9467 9.03405 25.9701V25.9649Z" fill="#50BFAB"/>
+                <path d="M27.9161 25.965C26.1947 25.965 24.6499 25.5592 23.2804 24.7489C21.9097 23.9386 20.824 22.8538 20.0206 21.4946C19.2173 20.1368 18.8149 18.6345 18.8149 16.9905C18.8149 15.3465 19.2173 13.8507 20.0206 12.5032C20.824 11.1558 21.9161 10.0775 23.2985 9.26591C24.6795 8.45561 26.2192 8.0498 27.9174 8.0498C29.6157 8.0498 31.2172 8.45561 32.5866 9.26591C33.9561 10.0762 35.0431 11.1623 35.8464 12.5201C36.6498 13.8793 37.0521 15.3686 37.0521 16.9905C37.0521 18.6124 36.6498 20.1368 35.8464 21.4946C35.0431 22.8538 33.9496 23.9386 32.5686 24.7489C31.1875 25.5592 29.6363 25.965 27.9161 25.965ZM27.9161 21.4088C28.753 21.4088 29.4957 21.2085 30.1405 20.8092C30.7852 20.4099 31.2946 19.8792 31.6685 19.2159C32.0425 18.5539 32.2294 17.8229 32.2294 17.023C32.2294 16.2231 32.0425 15.4934 31.6685 14.8301C31.2946 14.1681 30.7852 13.6374 30.1405 13.2368C29.4957 12.8375 28.753 12.6372 27.9161 12.6372C27.0792 12.6372 26.3713 12.8375 25.7253 13.2368C25.0805 13.6361 24.5712 14.1681 24.1972 14.8301C23.8233 15.4921 23.6363 16.2231 23.6363 17.023C23.6363 17.8229 23.8233 18.5526 24.1972 19.2159C24.5712 19.8779 25.0805 20.4099 25.7253 20.8092C26.37 21.2085 27.1012 21.4088 27.9161 21.4088Z" fill="#50BFAB"/>
+                <path d="M40.9219 0.75293H45.7445V25.5199H40.9219V0.75293Z" fill="#5B48D9"/>
+                <path d="M53.5562 6.02835C53.0133 6.02835 52.5091 5.89698 52.0449 5.63425C51.5807 5.37152 51.2183 5.00604 50.9579 4.5378C50.6974 4.06957 50.5671 3.56102 50.5671 3.01344C50.5671 2.46587 50.6974 1.96382 50.9579 1.50599C51.2183 1.04946 51.5807 0.683978 52.0449 0.409541C52.5091 0.135103 53.0133 -0.00146484 53.5562 -0.00146484C54.099 -0.00146484 54.5968 0.135103 55.0507 0.409541C55.5033 0.683978 55.8605 1.04946 56.1209 1.50599C56.3814 1.96252 56.5117 2.46457 56.5117 3.01344C56.5117 3.56232 56.3814 4.06957 56.1209 4.5378C55.8605 5.00604 55.5033 5.37152 55.0507 5.63425C54.5981 5.89698 54.1003 6.02835 53.5562 6.02835ZM51.1448 8.56331H55.9675V25.5199H51.1448V8.56331Z" fill="#5B48D9"/>
+                <path d="M69.7882 25.9999C68.0448 25.9999 66.4884 25.611 65.119 24.8345C63.7482 24.058 62.6677 22.9967 61.8759 21.6492C61.0829 20.3017 60.687 18.7721 60.687 17.0592V0.75293H65.5097V13.6333L63.1667 14.0443C63.1667 12.9947 63.4891 12.0127 64.1351 11.0983C64.7798 10.1852 65.6232 9.45428 66.6651 8.90541C67.7057 8.35783 68.8391 8.0834 70.0616 8.0834C71.8049 8.0834 73.3394 8.46059 74.6637 9.21366C75.988 9.96674 77.0235 11.0242 77.7714 12.382C78.518 13.7412 78.8919 15.2994 78.8919 17.0579C78.8919 18.6798 78.4961 20.169 77.703 21.5282C76.91 22.8874 75.8294 23.9721 74.46 24.7825C73.0893 25.5928 71.5329 25.9986 69.7908 25.9986L69.7882 25.9999ZM69.7882 21.4099C70.6251 21.4099 71.3678 21.2096 72.0125 20.8103C72.6573 20.411 73.1615 19.8803 73.5238 19.217C73.8862 18.5549 74.0667 17.8357 74.0667 17.0592C74.0667 16.2827 73.8849 15.5231 73.5238 14.8494C73.1615 14.1756 72.6573 13.645 72.0125 13.2561C71.3678 12.8685 70.6251 12.6734 69.7882 12.6734C68.9513 12.6734 68.2434 12.8672 67.5974 13.2561C66.9526 13.645 66.4433 14.1756 66.0693 14.8494C65.6954 15.5231 65.5084 16.2593 65.5084 17.0592C65.5084 17.8591 65.6954 18.5549 66.0693 19.217C66.4433 19.879 66.9526 20.411 67.5974 20.8103C68.2421 21.2096 68.9732 21.4099 69.7882 21.4099Z" fill="#5B48D9"/>
+                <path d="M86.9396 25.5199H82.1169V15.791C82.1169 14.3304 82.389 13.0219 82.9319 11.8683C83.4748 10.7159 84.3013 9.80153 85.4116 9.12779C86.5205 8.45406 87.9016 8.11719 89.5547 8.11719C90.1208 8.11719 90.6752 8.16921 91.2194 8.27196C91.7636 8.37472 92.2497 8.51779 92.6791 8.69988V13.4264C92.2716 13.1754 91.8306 12.9933 91.3548 12.8789C90.879 12.7644 90.4264 12.7072 89.997 12.7072C89.0466 12.7072 88.2987 12.9985 87.7559 13.5812C87.213 14.1639 86.9409 14.9573 86.9409 15.9614V25.5186L86.9396 25.5199Z" fill="#5B48D9"/>
+                <path d="M97.3303 6.02835C96.7875 6.02835 96.2833 5.89698 95.8191 5.63425C95.3548 5.37152 94.9925 5.00604 94.732 4.5378C94.4716 4.06957 94.3413 3.56102 94.3413 3.01344C94.3413 2.46587 94.4716 1.96382 94.732 1.50599C94.9925 1.04946 95.3548 0.683978 95.8191 0.409541C96.2833 0.135103 96.7875 -0.00146484 97.3303 -0.00146484C97.8732 -0.00146484 98.3709 0.135103 98.8248 0.409541C99.2775 0.683978 99.6346 1.04946 99.8951 1.50599C100.156 1.96252 100.286 2.46457 100.286 3.01344C100.286 3.56232 100.156 4.06957 99.8951 4.5378C99.6346 5.00604 99.2775 5.37152 98.8248 5.63425C98.3722 5.89698 97.8745 6.02835 97.3303 6.02835ZM94.919 8.56331H99.7417V25.5199H94.919V8.56331Z" fill="#5B48D9"/>
+              </g>
+            <defs>
+              <clipPath id="clip0_24_363">
+              <rect width="100.286" height="26" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+        </a>
 
-    <h2>Demandez aux autres</h2>
-    <p>Le but des questionnaires est de récolter un maximum d’informations sur comment les utilisateurs peuvent réagir sur le fonctionnement de l’application. Avec ces informations, on peut établir de plus en plus clairement une stratégie derrière le service proposé (voire simplement prendre une autre direction).</p>
+      </section>
 
-    <h3>1er questionnaire, pivotons</h3>
-    <p>Le premier questionnaire est aussi mon premier pivot. En travaillant sur mon idée originelle de suggestion pour personnes migrantes vers la Belgique, je me suis heurté à plusieurs problèmes concernant mon sujet: un manque cruel d’utilisateurs et une barrière linguistique énorme. Qu’est-ce que je peux faire que tout le monde, si possible en français, peut apprécier ?</p>
-    <p>Pour rester dans le thème de la suggestion, je décide alors de travailler sur un service permettant de vous proposer des films, séries, jeux, musique ou même livres sur base de ce que vous avez déjà vu, joué, écouté ou même lu. Je rédige alors un questionnaire pour voir comment cela se présente pour cette idée.</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkoGgUUj3F5Fl9XcwhDUTmgpJJrQXwj8EPvXPSv_PKqZzVZg/viewform?usp=sf_link">Le questionnaire ici</a>
-    Les personnes semblent assez enclin à vouloir un appli du genre et semblent ne pas avoir vraiment d’alternative centralisée. Ce premier formulaire est donc un succès pour le but recherché.</p>
-    <h4>NOTES SUBSIDIAIRES</h4>
-    <p>Demande de mise à jour assez fréquente pour un contenu bien défini</p>
+      <h1><span class="title--serif title--dcolor">case</span> study</h1>
 
-    <ul>
-        <li>- Solution ? baisse du contenu (tout → livres numériques, audios et physiques)</li>
-        <li>Une bonne interface pour mieux comprendre la séparation entre types</li>
-        <li>- Solution ? interface plus moderne restant le plus sobre possible</li>
-    </ul>
+    </header>
 
-    </p>
-    <h3>2ème questionnaire, petit pas</h3>
-    <p>Ce deuxième questionnaire vise déjà un public plus particulier, il vise uniquement les lecteurs.rices. Ceux-ci ont-ils envie/besoin d’une application du genre pour accompagner leur lecture ?</p>
-    <p>Le but étant alors de proposer une application servant de bibliothèque numérique pour les utilisateurs leur permettant plusieurs fonctionnalités importantes: un système de stockage des livres lus, relus des envies de lecture ainsi qu’une gestion particulière de ces éléments.</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScRb4HXxwcCekFoDBMqLb8lJ9O1YGgb3J-9bK-7QIiwhEw6uw/viewform?usp=sf_link">Le questionnaire ici</a>
-    <p>Les personnes semblent beaucoup apprécier l’idée d’une application du genre, certaines alternatives existent déjà mais manquent de cohérence et de fonctionnalités nécessaires à ce type d’utilisateur.</p>
+    <section class="article article--cs article__csbox">
 
-    <h4>NOTES SUBSIDIAIRES</h4>
-    <p>Plusieurs fonctionnalités devraient y figurer:</p>
+      <h2 class="title__second title__second--mtop">L’idée première</span></h2>
 
-    <ul>
-        <li>Système de bibliothèque virtuelle usant d’un système de scan et de recherche dans une base de données</li>
-        <li>Bibliothèque publique et privé permettant une partage concret avec les autres utilisateurs mais aussi une création privée centralisée sur l’appareil de la personne</li>
-        <li>Notification pour conférence (auteurs aimé.es) et sorties récentes (par rapport à lectures en cours</li>
-        <li>Système permettant le fonctionnement d’une lecture commune entre plusieurs utilisateurs (calendrier connecté, avancement de lecture, chat groupé, etc.)</li>
-        <li>Défi lecture permettant de transformer la lecture en jeu (fonctionnalité à revoir mais permettre un système de points)</li>
-        <li>Recherche des meilleures offres autour de soi pour le livre souhaité avec notification en cas d’offre plus basse sortie</li>
-        <li>Système de notation de citation et de prise de notes dans un livre de manière numérique</li>
-    </ul>
+      <p>Mon idée de base était de partir sur un service permettant aux immigrés de trouver des commerces et groupes provenant de leur pays en Belgique. Cela fonctionnerait alors sous forme de suggestions sur base du pays ou de la région d’où l’utilisateur proviendrait.
+      <p class="text--bold text--mbottom">Voyons comment tout cela peut évoluer.</p>
 
-    <h3>Littéralement, demander aux autres</h3>
-    <p>La toute première manière de trouver des informations sur le public cible est simplement d’aller lui poser directement des questions. C’est alors qu’à la suite d’interviews, j’ai pu en tirer certaines conclusions.</p>
-    <p>J’ai besoin d’un produit qui puisse en plus de proposer un système de suggestion; les gens veulent être surpris par de nouvelles choses à découvrir mais aussi découvrir un peu plus de l’univers qu’ils connaissent déjà.</p>
-    <p>Aussi un système qui peut permettre l’organisation de sa bibliothèque de manière virtuelle, en mettant tous les livres dans une même base de données, pouvant être séparée par des sections prédéfinies (année de sortie ou genre) ou bien par des sections créées par l’utilisateur.</p>
-    <p>Ainsi qu’un système de post et de feed laissant la possibilité aux utilisateurs de parler de leurs sagas, leurs livres ou auteurs préférés ou détestés.</p>
-    <p><strong>Dans chacun de ces systèmes, il y aura bien-sûr des éléments qui viendront rendre l’expérience plus agréable.</strong></p>
+    </section>
 
-    <h2>MVP, analysons le marché</h2>
-    <p>Donner le minimum de travail pour le maximum de résultat, voilà notre prochaine étape. En guise de MVP (“minimum viable product” ou bien produit minimum viable en français), j’ai décidé de faire une page notion avec ma première fonctionnalité: la bibliothèque personnelle.</p>
-    <p>Cette fonctionnalité comprend un traitement des livres déjà lus par genre, date de début et de fin de lecture, ainsi que d’autres petites informations personnalisables. Tout ça stocké dans une liste bien ficelée sur le site web. Ces informations servent alors à alimenter une autre base de données où l’on peut retrouver ses livres par genre ou le nombre de livres lus par rapport au “goal” (objectif, en français) que l’on s’est fixé. Elle permet aussi de stocker des citations inspirantes retrouvées ou même des défis que l’on s’est lancé.</p>
-    <p>Toutes ces petites fonctionnalités me permettent alors de pouvoir tester mon application avec le minimum d’effort pour en tirer un maximum de conclusions.</p>
-    <p>Après l’avoir testé sur quelques personnes, j’ai pu établir une petite liste des choses à améliorer pour l’application en elle-même mais surtout me rendre compte que cette application suscitait un certain intérêt voire un étonnement que cela était possible; les applications sur le marché pour le moment ne proposant rien du genre.</p>
-    <p>Les tests se passent pour le mieux et je peux récolter des informations sur comment continuer mon chemin dans ce projet.  Ce que les gens comprennent, ce qu’ils cherchent comme fonctionnalité principale, comment l’adapter à plusieurs types de lecteurs, voilà les informations que j’ai pu récolter.</p>
-    <p>Je pense alors nécessaire d’établir une liste de type de lecteurs (le lecteur occasionnel, le lecteur collectionneur, le lecteur passionné) ce qui me permettra de trouver le sens que l’application pourrait prendre sans oublier de prendre en compte les besoins de chacun. On peut partir vers l’user-journey.</p>
+    <section class="article article--cs article--start">
 
-    <h2>Création de l’identité, c bô dis donc</h2>
-    <p>Pour l’identité de l’application, je décide de partir sur le nom “Colibri” en référence à l’oiseau très rapide mais surtout petit et discret. Ces oiseaux, nommés les trochilidae,  ont pour particularité de faire partie d’une famille qui comporte 340 espèces de ce qu’on appelle communément des “oiseaux-mouches” de toutes tailles et couleurs.</p>
-    <p>Ce qui en vient à notre application, un “colibri” personnalisé pour tous rapide et discret qui vous permettra de consolider toutes les informations de votre bibliothèque physique ou virtuelle dans le creux de votre main.</p>
-    <p>Dans le logotype, le “co” est séparé du “libri”; “co” car l’application permet une bibliothèque partagée sous forme de réseau social et “libri” signifie “livres” en italien. Colibri est une application de gestion de bibliothèque physique et virtuelle personnalisée.</p>
-    <p>Après une veille des différents sites web et applications proposant ce genre de service, je me rends compte qu’il y a un côté très brouillon dans la plupart, rappelant une idée un peu vintage, comme un vieux livre. Je décide alors de partir sur une idée un peu différente, un style plus moderne donnant un renouveau à ces applications.</p>
-    <p>Pour ce qui en est du style, j’ai décidé d’utiliser des formes géométriques simples et seulement deux couleurs que je décline dans plusieurs teintes plus claires ou plus foncées. Le vert d’eau qui, ici, donne un côté apaisant à l’application qui rappelle le sentiment ressenti lors de la lecture et le violet vient renforcer cette idée d’apaisement pour créer une environnement tout à fait propice à la gestion de sa bibliothèque. Ces couleurs viennent aussi rappeler le colibri vert et violet que l’on a l’habitude de voir.</p>
+      <h2 class="title__second title--dcolor">Demandez aux autres</h2>
+      <p class="text--bold">Le but des questionnaires est de récolter un maximum d’informations sur comment les utilisateurs peuvent réagir sur le fonctionnement de l’application. Avec ces informations, on peut établir de plus en plus clairement une stratégie derrière le service proposé (voire simplement prendre une autre direction).</p>
 
-    <h2>Prototypage I, premier du nom</h2>
-    <p>Pour le premier prototype, je me consacre uniquement à l’UX (user experience, ou expérience utilisateur en français) donc pas de design ici, ce sera pour plus tard. Je crée alors les différentes pages pouvant être utilisées par une application lambda: l’accueil, les paramètres, le profil. Ensuite, je passe aux pages qui sont spéciales à mon projet: les posts, le scan de livres, la librairie personnelle (incluant les citations et les défis personnels).</p>
-    <p>Bon, j’ai alors mes pages, faut les remplir de contenu, je vous épargne les détails pour sauter directement à la fin, voici le résultat.</p>
+    </section>
 
-    <h2>User-journey, racontons une petite histoire.</h2>
-    <p>J’ai défini alors quelques types d’utilisateurs qui auront des envies particulières sur mon application et chercheront différentes choses. Voyons comment ils réagissent.</p>
+    <section class="article article--cs article--csgrid">
 
-    <h2>Test utilisateur, le test avant la catastrophe</h2>
-    <p>Le test utilisateur m’a amené à apporter plusieurs améliorations à l’application en soi: un feed d’actualité précis, une citation sur la page d’accueil, une fonction de déconnexion, blocage, une barre de recherche fonctionnelle, les “follow”.</p>
+      <div>
 
-    <h2>Conclusion</h2>
-    <p>Ce projet a été l’un des plus frénétiques qu’il m’ait été donné de faire, avec ce site de présentation, un prototype d’application ainsi qu’une vidéo et une présentation présentielle. Cela n’a pas été de tout repos, mais je crois avoir enfin rendu un projet duquel je suis assez fier graphiquement et techniquement. J’ai réussi à créer une identité graphique bien précise autour de l’application et j’en suis assez satisfait.</p>
-    <p>La vidéo et la présentation ont aussi été pour moi très instructive à préparer, savoir parler de son projet une fois arrivé au bout est une tâche qui semble très simple mais se trouve être assez compliquée.</p>
-    <p>En parlant de la vidéo, vous pouvez la retrouver <a href="video.html">ici.</a></p>
+        <h3>1er questionnaire, pivotons</h3>
 
-    <p><strong>“The cost of being wrong is less than the cost of not trying.”</strong></p>
+        <p><a class="link--cs" href="https://docs.google.com/forms/d/e/1FAIpQLSfkoGgUUj3F5Fl9XcwhDUTmgpJJrQXwj8EPvXPSv_PKqZzVZg/viewform?usp=sf_link">Le premier questionnaire</a> est aussi mon premier pivot. En travaillant sur mon idée originelle de suggestion pour personnes migrantes vers la Belgique, je me suis heurté à plusieurs problèmes concernant mon sujet: un manque cruel d’utilisateurs et une barrière linguistique énorme. Qu’est-ce que je peux faire que tout le monde, si possible en français, peut apprécier&nbsp;?</p>
+        <p>Pour rester dans le thème de la suggestion, je décide alors de travailler sur un service permettant de vous proposer des films, séries, jeux, musique ou même livres sur base de ce que vous avez déjà vu, joué, écouté ou même lu. Je rédige alors un questionnaire pour voir comment cela se présente pour cette idée.</p>
+
+        
+        <p>Les personnes semblent assez enclin à vouloir un appli du genre et semblent ne pas avoir vraiment d’alternative centralisée. Ce premier formulaire est donc un succès pour le but recherché.</p>
+
+      </div>
+
+      <div>
+
+        <h3>2ème questionnaire, petit pas</h3>
+
+        <p><a class="link--cs" href="https://docs.google.com/forms/d/e/1FAIpQLScRb4HXxwcCekFoDBMqLb8lJ9O1YGgb3J-9bK-7QIiwhEw6uw/viewform?usp=sf_link">Ce deuxième questionnaire</a> vise déjà un public plus particulier, il vise uniquement les lecteurs.rices. Ceux-ci ont-ils envie/besoin d’une application du genre pour accompagner leur lecture&nbsp;?</p>
+        <p>Le but étant alors de proposer une application servant de bibliothèque numérique pour les utilisateurs leur permettant plusieurs fonctionnalités importantes: un système de stockage des livres lus, relus des envies de lecture ainsi qu’une gestion particulière de ces éléments.</p>
+        <p>Les personnes semblent beaucoup apprécier l’idée d’une application du genre, certaines alternatives existent déjà mais manquent de cohérence et de fonctionnalités nécessaires à ce type d’utilisateur.</p>
+
+      </div>
+
+    </section>
+
+    <section class="article article--cs article--start">
+
+      <h3>Littéralement, demander aux autres</h3>
+
+      <p>La toute première manière de trouver des informations sur le public cible est simplement d’aller lui poser directement des questions. C’est alors qu’à la suite d’interviews, j’ai pu en tirer certaines conclusions.</p>
+      <p>J’ai besoin d’un produit qui puisse en plus de proposer un système de suggestion; les gens veulent être surpris par de nouvelles choses à découvrir mais aussi découvrir un peu plus de l’univers qu’ils connaissent déjà.</p>
+      <p>Aussi un système qui peut permettre l’organisation de sa bibliothèque de manière virtuelle, en mettant tous les livres dans une même base de données, pouvant être séparée par des sections prédéfinies (année de sortie ou genre) ou bien par des sections créées par l’utilisateur.</p>
+      <p>Ainsi qu’un système de post et de feed laissant la possibilité aux utilisateurs de parler de leurs sagas, leurs livres ou auteurs préférés ou détestés.</p>
+      <p class="text--bold">Dans chacun de ces systèmes, il y aura bien-sûr des éléments qui viendront rendre l’expérience plus agréable.</p>
+
+    </section>
+
+    <section class="article article--cs article--start">
+
+      <h2 class="title__second">MVP, analysons le marché</h2>
+      <p>Donner le minimum de travail pour le maximum de résultat, voilà notre prochaine étape. En guise de MVP (“minimum viable product” ou bien produit minimum viable en français), j’ai décidé de faire une page notion avec ma première fonctionnalité: la bibliothèque personnelle.</p>
+      <p>Cette fonctionnalité comprend un traitement des livres déjà lus par genre, date de début et de fin de lecture, ainsi que d’autres petites informations personnalisables. Tout ça stocké dans une liste bien ficelée sur le site web. Ces informations servent alors à alimenter une autre base de données où l’on peut retrouver ses livres par genre ou le nombre de livres lus par rapport au “goal” (objectif, en français) que l’on s’est fixé. Elle permet aussi de stocker des citations inspirantes retrouvées ou même des défis que l’on s’est lancé.</p>
+      <p>Toutes ces petites fonctionnalités me permettent alors de pouvoir tester mon application avec le minimum d’effort pour en tirer un maximum de conclusions.</p>
+      <p>Après l’avoir testé sur quelques personnes, j’ai pu établir une petite liste des choses à améliorer pour l’application en elle-même mais surtout me rendre compte que cette application suscitait un certain intérêt voire un étonnement que cela était possible; les applications sur le marché pour le moment ne proposant rien du genre.</p>
+      <p>Les tests se passent pour le mieux et je peux récolter des informations sur comment continuer mon chemin dans ce projet.  Ce que les gens comprennent, ce qu’ils cherchent comme fonctionnalité principale, comment l’adapter à plusieurs types de lecteurs, voilà les informations que j’ai pu récolter.</p>
+      <p>Je pense alors nécessaire d’établir une liste de type de lecteurs (le lecteur occasionnel, le lecteur collectionneur, le lecteur passionné) ce qui me permettra de trouver le sens que l’application pourrait prendre sans oublier de prendre en compte les besoins de chacun. On peut partir vers l’user-journey.</p>
+
+    </section>
+
+    <section class="article--cs">
+
+      <section class="title">
+
+        <section class="title__form minvisible">
+  
+            <div class="magnetic-wrap">
+  
+                <div class="js-magnetic-area magnetic-size">
+  
+                </div>
+  
+                <div class="js-magnetic-content display-form">
+  
+                    <div class="circle2">
+                      <svg width="182" height="182" viewBox="0 0 182 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="90.8409" y="-8.1582" width="139.782" height="139.782" rx="20" transform="rotate(45 90.8409 -8.1582)" fill="#5B48D9"/>
+                        </svg>                                           
+                    </div>
+  
+                </div>
+  
+            </div>
+            
+            <div class="magnetic-wrap">
+  
+              <div class="js-magnetic-area magnetic-size">
+  
+              </div>
+  
+              <div class="js-magnetic-content display-form">
+  
+                  <div class="circle2">
+                    <svg width="147" height="105" viewBox="0 0 147 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.859661 58.0716C8.46437 76.5801 23.1101 91.3095 41.5749 99.0197C60.0397 106.73 80.8111 106.789 99.3196 99.1843C117.828 91.5796 132.558 76.9339 140.268 58.4691C147.978 40.0043 148.037 19.2329 140.432 0.724431L70.646 29.398L0.859661 58.0716Z" fill="#50BFAB"/>
+                    </svg>                 
+                  </div>
+  
+              </div>
+  
+          </div>
+  
+        </section>
+  
+        <h2>Création de l'identité, c bô dis donc</h2>
+  
+        <section class="title__form2 minvisible">
+  
+            <div class="magnetic-wrap">
+  
+                <div class="js-magnetic-area magnetic-size">
+  
+                </div>
+  
+                <div class="js-magnetic-content display-form">
+  
+                    <div class="circle">
+                      <svg width="117" height="126" viewBox="0 0 117 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M116.56 110.541C117.463 121.28 106.402 128.97 96.6499 124.383L8.30309 82.8253C-1.44907 78.2379 -2.57824 64.8138 6.27057 58.6619L86.4337 2.93001C95.2825 -3.22196 107.473 2.51219 108.376 13.2515L116.56 110.541Z" fill="#5B48D9"/>
+                        </svg>                        
+                    </div>
+  
+                </div>
+  
+            </div>
+  
+            <div class="magnetic-wrap">
+  
+              <div class="js-magnetic-area magnetic-size">
+  
+              </div>
+  
+              <div class="js-magnetic-content display-form">
+  
+                  <div class="circle2">
+                    <svg width="163" height="254" viewBox="0 0 163 254" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M162.852 5.29673C129.896 -3.53379 94.7816 1.08907 65.2341 18.1483C35.6866 35.2076 14.126 63.3059 5.29552 96.2618C-3.535 129.218 1.08786 164.332 18.1471 193.879C35.2064 223.427 63.3046 244.987 96.2606 253.818L129.556 129.557L162.852 5.29673Z" fill="#50BFAB"/>
+                    </svg>                    
+                  </div>
+  
+              </div>
+  
+          </div>
+  
+        </section>
+  
+      </section>
+
+      <video autoplay loop src="assets/images/video/logo.mp4" style="width: 100%; border-radius: 30px; margin-bottom: 3.998rem;"></video>
+
+      <div class="article--start">
+
+        <p>Pour l’identité de l’application, je décide de partir sur le nom “Colibri” en référence à l’oiseau très rapide mais surtout petit et discret. Ces oiseaux, nommés les trochilidae,  ont pour particularité de faire partie d’une famille qui comporte 340 espèces de ce qu’on appelle communément des “oiseaux-mouches” de toutes tailles et couleurs.</p>
+        <p>Ce qui en vient à notre application, un “colibri” personnalisé pour tous rapide et discret qui vous permettra de consolider toutes les informations de votre bibliothèque physique ou virtuelle dans le creux de votre title__form.</p>
+        <p>Dans le logotype, le “co” est séparé du “libri”; “co” car l’application permet une bibliothèque partagée sous forme de réseau social et “libri” signifie “livres” en italien. Colibri est une application de gestion de bibliothèque physique et virtuelle personnalisée.</p>
+        <p>Après une veille des différents sites web et applications proposant ce genre de service, je me rends compte qu’il y a un côté très brouillon dans la plupart, rappelant une idée un peu vintage, comme un vieux livre. Je décide alors de partir sur une idée un peu différente, un style plus moderne donnant un renouveau à ces applications.</p>
+        <p>Pour ce qui en est du style, j’ai décidé d’utiliser des formes géométriques simples et seulement deux couleurs que je décline dans plusieurs teintes plus claires ou plus foncées. Le vert d’eau qui, ici, donne un côté apaisant à l’application qui rappelle le sentiment ressenti lors de la lecture et le violet vient renforcer cette idée d’apaisement pour créer une environnement tout à fait propice à la gestion de sa bibliothèque. Ces couleurs viennent aussi rappeler le colibri vert et violet que l’on a l’habitude de voir.</p>
+
+      </div>
+
+    </section>
+
+    <section class="article article--cs article--csgrid article--csgridm">
+
+      <div>
+
+        <h2 class="title__second title__second--mtop">Prototypage I, premier du nom</h2>
+        <p>Pour le premier prototype, je me consacre uniquement à l’UX (user experience, ou expérience utilisateur en français) donc pas de design ici, ce sera pour plus tard. Je crée alors les différentes pages pouvant être utilisées par une application lambda: l’accueil, les paramètres, le profil. Ensuite, je passe aux pages qui sont spéciales à mon projet: les posts, le scan de livres, la librairie personnelle (incluant les citations et les défis personnels).</p>
+        <p>Bon, j’ai alors mes pages, faut les remplir de contenu, je vous épargne les détails pour sauter directement à la fin, voici le résultat.</p>
+
+      </div>
+
+      <video autoplay loop src="assets/images/video/appux.mp4" style="border-radius: 30px;"></video>
+
+    </section>
+
+    <section class="article article--cs">
+
+      <div class="article__csbox">
+
+        <h2 class="title__second">User-journey, racontons une petite histoire.</h2>
+        <p class="text--bold">J’ai défini alors quelques types d’utilisateurs qui auront des envies particulières sur mon application et chercheront différentes choses. Voyons comment ils réagissent.</p>
+        <p>Pour scroller sur ordinateur, title__formtenez la touche SHIFT et scrollez avec votre souris normalement OU simplement cliquer sur la photo et utilisez les flèches de votre clavier. Sur mobile ou tablette, il vous suffit de glisser votre doigt sur l'écran comme pour défiler.</p>
+
+      </div>
+
+      <div class="uj__block">
+
+        <div class="uj__overflow">
+          <img src="assets/images/uj_1.jpg" srcset="assets/images/uj_1@2x.jpg 2x" alt="" class="uj__img">
+        </div>
+
+        <div class="uj__overflow">
+          <img src="assets/images/uj_2.jpg" srcset="assets/images/uj_2@2x.jpg 2x" alt="" class="uj__img">
+        </div>
+
+        <div class="uj__overflow">
+          <img src="assets/images/uj_3.jpg"  srcset="assets/images/uj_3@2x.jpg 2x"alt="" class="uj__img">
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="article article--cs article__csbox">
+
+      <h2 class="title__second">Test utilisateur, le test avant la catastrophe</h2>
+      <p>Le test utilisateur m’a amené à apporter plusieurs améliorations à l’application en soi: un feed d’actualité précis, une citation sur la page d’accueil, une fonction de déconnexion, blocage, une barre de recherche fonctionnelle, les “follow”.</p>
+
+    </section>
+
+    <section class="article article--cs">
+
+    <h2 class="title__second">Conclusion</h2>
+
+      <section class="header__carousel">
+
+        <div class="header__carousel--list header__carousel--cs">
+
+          <video autoplay loop src="assets/images/video/t1e1.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t1e2.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t1e3.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t2e1.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t2e2.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t3e3.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t3e1.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t3e2.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t3e3.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t1e1.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t1e2.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t1e3.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t2e1.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+          <video autoplay loop src="assets/images/video/t2e2.mp4" alt="" class="header__carousel--cs prototype__img--carousel"></video>
+
+        </div>
+
+      </section>
+
+      <div class="article--start">
+      
+        <p class="text--ucarousel">Ce projet a été l’un des plus frénétiques qu’il m’ait été donné de faire, avec ce site de présentation, un prototype d’application ainsi qu’une vidéo et une présentation présentielle. Cela n’a pas été de tout repos, mais je crois avoir enfin rendu un projet duquel je suis assez fier graphiquement et techniquement. J’ai réussi à créer une identité graphique bien précise autour de l’application et j’en suis assez satisfait.</p>
+        <p>La vidéo et la présentation ont aussi été pour moi très instructive à préparer, savoir parler de son projet une fois arrivé au bout est une tâche qui semble très simple mais se trouve être assez compliquée.</p>
+        <p>En parlant de la vidéo, vous pouvez la retrouver <a href="video.html">ici.</a> Et n'oubliez pas&nbsp;:</p>
+
+      </div>
+
+      <blockquote class="text--quote text--mbottom">&laquo;&nbsp;Le coût d'avoir tort est moindre comparé au coût de ne pas avoir essayé.&nbsp;&raquo;</blockquote>
+
+    </section>
 
   <footer class="footer">
 
@@ -168,7 +370,6 @@
         
         <h3 class="title__third--popup">Photos, videos and design</h3>
         <p>All by myself, <a href="http://joao-gabriel.be/">check me out</a></p>
-        <p class="text--bold popup--credit">Project created for my end-year project in the Haute École Albert Jacquard.</p>
 
       </div>
 

@@ -24,7 +24,7 @@ h2{
     width: 600px;
 }
 
-.magnetic-wrap {
+.title__magneticwrap {
     display: inline-block;
     position: relative;
 }
@@ -33,7 +33,7 @@ h2{
     border-radius: 20px;
 }
 
-.magnetic-size {
+.title__magneticsize {
     position: absolute;
     bottom: -3rem;
     top: -3rem;
@@ -42,7 +42,7 @@ h2{
     z-index: 1;
 }
 
-.main, .main2{
+.title__form, .title__form2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@ h2{
 
     margin: 0;
 }
-.main{
+.title__form{
     transform: translateX(-10%);
 
 }
